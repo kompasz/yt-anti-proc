@@ -12,6 +12,7 @@ const sampleBackgroundGlobal = {
     message: 'This object comes from background.js'
 };
 
+
 // Listen to short lived messages from in-content.js
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     // Perform any ther actions depending on the message
