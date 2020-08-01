@@ -50,5 +50,13 @@ const initPopupScript = () => {
     });
 };
 
+const write = () => {
+    console.log('Button pressed!');
+}
+
 // Fire scripts after page has loaded
 document.addEventListener('DOMContentLoaded', initPopupScript);
+
+const closeAllTabs = document.getElementById('closeAllTabs');
+
+closeAllTabs.addEventListener("click", write);
